@@ -41,7 +41,7 @@ nav{
 nav h1{
     font-size: 40px;
 }
-.nav-list{
+.nav-list,.footer-child li{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -260,6 +260,7 @@ text-shadow: 4px 3px 0px rgb(70, 63, 63), 9px 8px 10px rgba(75, 66, 66, 0.15);
   }
   
 .subscirbe-container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,9 +309,9 @@ text-shadow: 4px 3px 0px rgb(70, 63, 63), 9px 8px 10px rgba(75, 66, 66, 0.15);
     background-color:
     #2294ed;
 }
-.subscirbe-container p,li{
+.subscirbe-container .subscibe-list li , .subscibe-content p{
 font-weight: 100;
-color:rgb(255, 255, 255,0.7) !important;
+color:rgb(255, 255, 255,0.7);
 }
 
 .gesttarted{
@@ -323,15 +324,68 @@ color:rgb(255, 255, 255,0.7) !important;
     height: 80vh;
 }
 .footer{
+    padding: 90px 50px;
+    background-color: #ebf2fa;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    /* margin-bottom: 30px; */
 }
 .footer-child{
     display: flex;
+    gap: 190px;
+}
+.footer-child>div{
+    display: flex;
+    flex-direction: column;
     gap: 40px;
 }
+.footer-child>div h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.footer-child div>ul{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-child ul li:hover{
+    color: #0a47ec;
+}
 .footer-heading img{
-/* width: 20px; */
 height: 40px;
+}
+
+.last-footer{
+    display: flex;
+    height: 80px;
+    background-color: #b9cde4;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.last-footer .last-footer1,.last-footer2{
+   display: flex;
+   gap: 80px;
+}
+.last-footer2 img{
+    width: 30px;
+    color: #0a47ec;
+}
+.subscibe-circle{
+    height: 300px;
+    width: 300px;
+
+    position: absolute;
+    background-image: url(assets/asset\ 39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 28%;
+    left: 67%;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    align-content: center;
 }
